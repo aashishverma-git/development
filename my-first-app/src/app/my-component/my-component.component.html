@@ -1,0 +1,116 @@
+    <div id="main">
+    <div id="ribbon">
+    <div class="toplinks">
+        <div id="fonts">
+          <a href="#menu">Skip to Main Content</a> |
+          <a href="#" id="smallFont" class="small">A</a> |
+          <a href="#" id="mediumFont" class="medium">A</a> |
+          <a href="#" id="largeFont" class="large">A</a>
+        </div>
+        <div id="theme">
+            <div class="fl-l" id="select_theme">Select Theme</div>
+            <div class="theme" id="blue"></div>
+            <div class="theme" id="orange"></div>
+            <div class="theme" id="green"></div>
+            <div class="theme" id="purple"></div>
+            <div class="theme" id="style"></div>
+        </div>
+        <div id="qlink">
+          <a href="about.action">About Us</a> |
+          <a href="help.action">Help</a> |
+          <a href="contacts.action">Contact Us</a> |
+          <a href="sitemap.action">Sitemap</a>
+        </div>
+   </div>
+</div>
+<div id="logo_container">
+  <a id="emig_logo" class="emgrt-sprites emgrt-logo" title="Emigrate Home" href="home.action">&nbsp;</a>
+<a id="emblm_logo" class="emgrt-sprites emblem-logo" title="india.gov.in" href="http://india.gov.in" target="_blank">&nbsp;</a>
+<a id="moia_logo" class="emgrt-sprites moia-logo" title="(www.mea.gov.in)" href="http://www.mea.gov.in/overseas-indian-affairs-hi.htm" target="_blank">&nbsp;</a>
+</div>
+<div id="menu">
+  <div class="nav">
+    <ul>
+      <li class="home-icon-li"><div class="emgrt-sprites home-icon" onclick="window.location.href='home.action' "></div></li>
+        <li class="arrow_box"><a href="#" id="mi_1st_0">Emigrant </a></li>
+
+          <li class="arrow_box"><a href="#" id="mi_1st_1">Employer </a></li>
+            
+         
+</ul>
+  </div>
+
+</div>
+<font face="courier" color="blue" size="4"><marquee behavior="SCROLL" loop="-1" onmouseover="stop();" onmouseout="start();" bgcolor="yellow" width="100%"><b>RA Registration under new scheme with 8 lakh bank guarantee has been enabled in eMigrate. **********  No need to fill Identified Emigrant details. Details will be prefetched through Monthly Return (ECR to ECR). ********   Service charges have been enhanced. For more details please refer What's new section.    *********    Country Specific Order for nurses has been enabled  ********   "Open House" for emigrants organised with PGE on first Wednesday of every month between 10:00 AM - 12:00 PM    ********    No prior permission is required by registered recruiting agents (RA's) to publish newspaper advertisements for conducting interviews either in their registered office or any where else for recruiting ECNR categories workers for employment to any country.   *********  Circular has been issued by Ministry for Indian Nationals travelling to Iraq for employment dt. 16th Sep 2019.</b></marquee></font>
+<div id="content" class="display-tbl">
+<div class="leftcolumn">
+  <!-- leftcolumn -->
+  <div class="section">
+    <div>
+      <h2>Find</h2>
+      <ul>
+      <li><a href="searchRAOnly.action">Find Recruiting Agent</a></li>
+        <li><a href="searchEmployerOnlyExtNew.action">Find Employer</a></li>
+        <li><a href="searchEmployerPEOnly.action">Find Project Exporter</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <!-- Section for Updates -->
+  <div class="section">
+    <div>
+      <h2>Latest Updates</h2> 
+       <ul id="marqid">
+
+
+
+
+          <li><a href="https://twitter.com/eMigrateproject" target="_blank">Follow us on twitter @eMigrateproject</a></li>
+
+        </ul> 
+      <!--  <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" scrollamount="1" scrolldelay="3" height="100">         
+        
+        <ul id = "marqid">
+          <li id="marq"><a href="https://emigrate.gov.in/ext/forms/OfficeMemorandum12Jan16.pdf" target="_blank">Online Advertisement intimation through eMigrate<img src="imagesNew/blinking_hp.gif"></a></li>
+          <li id="marq"><a href="https://emigrate.gov.in/ext/forms/SubdmndFEeMgrtfordesiredjobdesig-JD.pdf" target="_blank">Submission of Demand by Foreign Employer in eMigrate System for a desired job designation-JORDAN</a></li>
+          <li id="marq"><a href="https://emigrate.gov.in/ext/forms/SubdmndFEeMgrtfordesiredjobdesig-KSA.pdf" target="_blank">Submission of Demand by Foreign Employer in eMigrate System for a desired job designation-KSA</a></li>
+          <li id="marq"><a href="https://emigrate.gov.in/ext/forms/SubdmndFEeMgrtfordesiredjobdesig-KW.pdf" target="_blank">Submission of Demand by Foreign Employer in eMigrate System for a desired job designation-KUWAIT</a></li>
+          <li id="marq"><a href="https://emigrate.gov.in/ext/forms/SubdmndFEeMgrtfordesiredjobdesig-QA.pdf" target="_blank">Submission of Demand by Foreign Employer in eMigrate System for a desired job designation-QATAR</a></li>
+          
+        </ul>
+       
+   </marquee> -->
+    </div>
+  </div>
+  <!-- Section for Updates -->
+  <div class="section">
+    <div>
+      <h2>FAQs</h2>
+       <form id="faqAction" name="faqAction" action="/ext/faqAction.action" method="post">
+        <label class="p5" for="qT">I am </label>
+        <select name="dd1" id="qT" class="dd" onchange="home.wajax(this.value);">
+<option value="">Select</option>
+<option value="Emig">Emigrant</option>
+<option value="RA">Recruitment Agent</option>
+<option value="Emp">Employer</option>
+<option value="PE">Project Exporter</option>
+
+
+</select>
+        <label class="p5" for="ajaxSelect">I want to know about...</label>
+        <div id="resultDiv" style="border: none;">
+        <select name="dd2" id="ajaxSelect" class="dd">
+<option value="">Select</option>
+
+
+</select>
+        </div>
+        <input type="submit" name="Get Results" value="Get Results" style="width:auto;margin-left: 25px;margin-bottom:8px;" class="p-b">
+       </form>
+    </div>
+  </div>
+  <div class="section"></div>
+</div>
+</div>
+</div>
